@@ -490,7 +490,7 @@ section {
     height: 100%;
     background: linear-gradient(
         90deg,
-        #000000 10%, #000000 40%,
+        #ffffff 35%, #ffffff 40%,
         #BB0000 40%, #BB0000 55%,
         #006600 55%, #006600 100%
     );
@@ -568,4 +568,5 @@ a:focus {
 
 .h3ab{
     color: white;
+
 }
