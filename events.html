@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Forums - TAIFA LA FURSA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="TAIFA LA FURSA Logo" class="logo-image" height="70">
+                </a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="initiatives.html">Initiatives</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+            <h2>Events & Forums</h2>
+            <p>Connecting stakeholders, catalyzing action, creating opportunities</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="events-section">
+        <div class="container">
+            <!-- Event Tabs/Filters -->
+            <div class="event-tabs">
+                <button class="event-tab active" data-tab="upcoming">Upcoming Events</button>
+                <button class="event-tab" data-tab="past">Past Events</button>
+                <button class="event-tab" data-tab="all">All Events</button>
+                
+                <div class="theme-filter">
+                    <select id="themeFilter">
+                        <option value="all">All Themes</option>
+                        <option value="business">Business</option>
+                        <option value="youth">Youth</option>
+                        <option value="women">Women</option>
+                        <option value="digital">Digital</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="energy">Energy</option>
+                        <option value="leadership">Leadership</option>
+                        <option value="peace">Peace</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Events Grid -->
+            <div class="events-grid">
+                <!-- Event Card 1 -->
+                <div class="event-card" data-category="business" data-status="upcoming">
+                    <div class="event-status upcoming">Upcoming</div>
+                    <div class="event-content">
+                        <h3>TAIFA LA FURSA National Business & Investment Forum</h3>
+                        <div class="event-meta">
+                            <p><i class="far fa-calendar"></i> 18–19 June 2026</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                            <p><i class="fas fa-tag"></i> Business Networking & Opportunity Matching</p>
+                        </div>
+                        <p class="event-excerpt">A premier gathering of entrepreneurs, investors, and business leaders to explore investment opportunities and forge strategic partnerships.</p>
+                        <a href="event-details.html" class="btn btn-primary btn-small">View Event</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="event-card" data-category="youth digital" data-status="upcoming">
+                    <div class="event-status upcoming">Upcoming</div>
+                    <div class="event-content">
+                        <h3>Youth & Digital Economy Empowerment Forum</h3>
+                        <div class="event-meta">
+                            <p><i class="far fa-calendar"></i> 10 March 2026</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Mombasa, Kenya</p>
+                            <p><i class="fas fa-tag"></i> Youth Empowerment | DO247</p>
+                        </div>
+                        <p class="event-excerpt">Empowering young people with digital skills and connecting them to opportunities in the global digital economy.</p>
+                        <a href="event-details.html" class="btn btn-primary btn-small">View Event</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 (Past Event) -->
+                <div class="event-card" data-category="women" data-status="past">
+                    <div class="event-status past">Completed</div>
+                    <div class="event-content">
+                        <h3>Women Entrepreneurship Summit 2025</h3>
+                        <div class="event-meta">
+                            <p><i class="far fa-calendar"></i> 8 March 2025</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Kisumu, Kenya</p>
+                            <p><i class="fas fa-tag"></i> Women Empowerment</p>
+                        </div>
+                        <p class="event-excerpt">Celebrating and supporting women entrepreneurs with training, networking, and access to markets.</p>
+                        <a href="event-details.html" class="btn btn-secondary btn-small">View Outcomes</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 4 (Past Event) -->
+                <div class="event-card" data-category="agriculture" data-status="past">
+                    <div class="event-status past">Completed</div>
+                    <div class="event-content">
+                        <h3>Food Security & Agribusiness Conference</h3>
+                        <div class="event-meta">
+                            <p><i class="far fa-calendar"></i> 15–16 November 2025</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Nakuru, Kenya</p>
+                            <p><i class="fas fa-tag"></i> Agriculture | Food Security</p>
+                        </div>
+                        <p class="event-excerpt">Addressing food security challenges through innovative agricultural practices and market linkages.</p>
+                        <a href="event-details.html" class="btn btn-secondary btn-small">View Report</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 5 -->
+                <div class="event-card" data-category="peace leadership" data-status="upcoming">
+                    <div class="event-status upcoming">Upcoming</div>
+                    <div class="event-content">
+                        <h3>Renewed Harmony Leadership Dialogue</h3>
+                        <div class="event-meta">
+                            <p><i class="far fa-calendar"></i> 5 April 2026</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Eldoret, Kenya</p>
+                            <p><i class="fas fa-tag"></i> Peace | Leadership</p>
+                        </div>
+                        <p class="event-excerpt">Promoting ethical leadership and social cohesion through community dialogue and reconciliation.</p>
+                        <a href="event-details.html" class="btn btn-primary btn-small">View Event</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 6 -->
+                <div class="event-card" data-category="energy environment" data-status="upcoming">
+                    <div class="event-status upcoming">Upcoming</div>
+                    <div class="event-content">
+                        <h3>Sustainable Energy & Green Economy Forum</h3>
+                        <div class="event-meta">
+                            <p><i class="far fa-calendar"></i> 22 July 2026</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                            <p><i class="fas fa-tag"></i> Energy | Environment</p>
+                        </div>
+                        <p class="event-excerpt">Exploring clean energy solutions and green enterprise opportunities for sustainable development.</p>
+                        <a href="event-details.html" class="btn btn-primary btn-small">View Event</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Call to Action -->
+            <div class="event-cta">
+                <h2>Be Part of Our Events</h2>
+                <p>Stay connected to opportunities and be part of Kenya's transformation journey.</p>
+                <div class="cta-buttons">
+                    <a href="#upcoming" class="btn btn-primary">View Upcoming Events</a>
+                    <a href="contact.html" class="btn btn-secondary">Host or Partner an Event</a>
+                    <a href="#subscribe" class="btn btn-accent">Subscribe for Updates</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                <img src="images/logo.png" alt="TAIFA LA FURSA Logo" class="logo-image" height="90"> 
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="initiatives.html">Initiatives</a></li>
+                            <li><a href="events.html">Events</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="legal/privacy.html">Privacy Policy</a></li>
+                            <li><a href="legal/terms.html">Terms of Use</a></li>
+                            <li><a href="legal/submission.html">Submission Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 518 Royal Park, Police Dog Unit Road, Nairobi, Kenya</p>
+                    <p><i class="fas fa-envelope"></i> info@taifalafursa.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TAIFA LA FURSA INITIATIVE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+    <script>
+        // Events filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const eventTabs = document.querySelectorAll('.event-tab');
+            const themeFilter = document.getElementById('themeFilter');
+            const eventCards = document.querySelectorAll('.event-card');
+
+            // Tab filtering
+            eventTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    eventTabs.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    const tabValue = this.getAttribute('data-tab');
+                    filterEvents(tabValue, themeFilter.value);
+                });
+            });
+
+            // Theme filtering
+            themeFilter.addEventListener('change', function() {
+                const activeTab = document.querySelector('.event-tab.active');
+                filterEvents(activeTab.getAttribute('data-tab'), this.value);
+            });
+
+            function filterEvents(tab, theme) {
+                eventCards.forEach(card => {
+                    const status = card.getAttribute('data-status');
+                    const categories = card.getAttribute('data-category');
+                    
+                    let showCard = true;
+                    
+                    // Check tab filter
+                    if (tab !== 'all' && status !== tab) {
+                        showCard = false;
+                    }
+                    
+                    // Check theme filter
+                    if (theme !== 'all' && !categories.includes(theme)) {
+                        showCard = false;
+                    }
+                    
+                    // Show/hide card
+                    if (showCard) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
