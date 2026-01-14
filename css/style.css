@@ -148,7 +148,7 @@ p {
 
 /* Hero Section */
 .hero {
-    background: var(--kenya-black);
+    background: var(--dark-gray);
     color: white;
     padding: var(--spacing-xl) 0;
     text-align: center;
